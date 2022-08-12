@@ -115,6 +115,7 @@ eksctl create iamserviceaccount \
 2022-08-12 16:18:50 [ℹ]  waiting for CloudFormation stack "eksctl-fargate-cluster-addon-iamserviceaccount-default-blogdemosa"
 2022-08-12 16:18:51 [ℹ]  created serviceaccount "default/blogdemosa"
 ```
+check sa
 ```
 jason@DEV-52WP6M3:~/Documents/eso1$ kubectl get sa
 NAME         SECRETS   AGE
@@ -130,6 +131,7 @@ Mountable secrets:   blogdemosa-token-dvcsh
 Tokens:              blogdemosa-token-dvcsh
 Events:              <none>
 ```
+run [first yaml](secretstore.yaml)
 ```
 jason@DEV-52WP6M3:~/Documents/eso1$ kubectl apply -f secretstore.yaml
 secretstore.external-secrets.io/blogdemo created
