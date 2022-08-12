@@ -83,6 +83,7 @@ external-secrets-webhook-84c7d457f4-jhcxl           0/1     Running   0         
 ```
 `eksctl utils associate-iam-oidc-provider --cluster=fargate-cluster --approve`
 ```
+```
 2022-08-12 16:16:00 [ℹ]  will create IAM Open ID Connect provider for cluster "fargate-cluster" in "us-east-1"
 2022-08-12 16:16:02 [✔]  created IAM Open ID Connect provider for cluster "fargate-cluster" in "us-east-1"
 ```
@@ -98,8 +99,8 @@ eksctl create iamserviceaccount \
     --override-existing-serviceaccounts
 ```
 ```
-2022-08-12 16:18:18 [ℹ]  1 iamserviceaccount (default/blogdemosa) was included (based on the include/exclude rules)
-2022-08-12 16:18:18 [!]  metadata of serviceaccounts that exist in Kubernetes will be updated, as --override-existing-serviceaccounts was set
+2022-08-12 16:18:18 [ℹ]  1 iamserviceaccount (default/blogdemosa) was included (based on the include/exclude rules)  
+2022-08-12 16:18:18 [!]  metadata of serviceaccounts that exist in Kubernetes will be updated, as --override-existing-serviceaccounts was set  
 2022-08-12 16:18:18 [ℹ]  1 task: { 
     2 sequential sub-tasks: { 
         create IAM role for serviceaccount "default/blogdemosa",
