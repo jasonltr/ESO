@@ -171,3 +171,4 @@ admin
 / # echo $BLOG_SECRET_PASSWORD
 admin
 ```
+![](eso_1.png)
