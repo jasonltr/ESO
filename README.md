@@ -90,7 +90,8 @@ external-secrets-webhook-84c7d457f4-jhcxl           0/1     Running   0         
 2022-08-12 16:16:00 [ℹ]  will create IAM Open ID Connect provider for cluster "fargate-cluster" in "us-east-1"
 2022-08-12 16:16:02 [✔]  created IAM Open ID Connect provider for cluster "fargate-cluster" in "us-east-1"
 ```
-From the terminal where you have eksctl installed, run the following commands. IAMPOLICYARN will be replaced with the Amazon Resource Name (ARN) of the IAM policy that has permissions to access your AWS Secrets Manager secret.
+From the terminal where you have eksctl installed, run the following commands. IAMPOLICYARN will be replaced with the Amazon Resource Name (ARN) of the IAM policy that has permissions to access your AWS Secrets Manager secret.  
+This service account will be attached to the policy you created earlier that allows the extraction of secrets from AWS secrets manager.
 ```
 eksctl create iamserviceaccount \
     --name blogdemosa \
