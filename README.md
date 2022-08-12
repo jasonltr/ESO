@@ -5,21 +5,23 @@ create IAM policy to enable all EKS actions
 create new user and attach EKS profile to that user  
 get AWS Access Key ID
 Get secret  
-`rm ~/.aws/credentials`
-`rm ~/.aws/config`
+`rm ~/.aws/credentials`  
+`rm ~/.aws/config`  
 run aws configure  
 user new user created  
 
 then run eksctl commands  
-
+```
 eksctl create fargateprofile \
     --cluster fargate-cluster \
     --name externalsecrets2 \
     --namespace external-secrets2
 ```
+```
 cloud_user
 AKIAUB3MR75KNU7CUFWH
 NLVhhfHyG0pFU3HBbz99V1ZvyoKPBpQTxgKMUbJI
+```
 ```
 eksadmin
 AKIAUB3MR75KGYWUITV3
