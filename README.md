@@ -19,6 +19,7 @@ eksctl create fargateprofile \
     --name externalsecrets2 \
     --namespace external-secrets2
 ```
+By right you should manually select the subnets also
 ```
 cloud_user
 AKIAUB3MR75KNU7CUFWH
