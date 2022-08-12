@@ -1,4 +1,4 @@
-following this [eso](https://aws.amazon.com/blogs/containers/leverage-aws-secrets-stores-from-eks-fargate-with-external-secrets-operator/)
+following this [eso](https://aws.amazon.com/blogs/containers/leverage-aws-secrets-stores-from-eks-fargate-with-external-secrets-operator/)  
 launch sandbox  
 
 create IAM policy to enable all EKS actions  
