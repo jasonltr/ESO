@@ -162,6 +162,9 @@ jason@DEV-52WP6M3:~/Documents/eso1$ kubectl apply -f podexample.yaml
 jason@DEV-52WP6M3:~/Documents/eso1$ kubectl get pods
 NAME      READY   STATUS    RESTARTS   AGE
 busybox   1/1     Running   0          66s
+```
+check that the pod can see the credentials
+```
 jason@DEV-52WP6M3:~/Documents/eso1$ kubectl exec --stdin --tty busybox -- /bin/sh
 / # echo $BLOG_SECRET_USERNAME
 admin
