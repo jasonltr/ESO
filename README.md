@@ -131,7 +131,7 @@ Mountable secrets:   blogdemosa-token-dvcsh
 Tokens:              blogdemosa-token-dvcsh
 Events:              <none>
 ```
-run [first yaml](secretstore.yaml)
+apply [secretstore.yaml](secretstore.yaml)
 ```
 jason@DEV-52WP6M3:~/Documents/eso1$ kubectl apply -f secretstore.yaml
 secretstore.external-secrets.io/blogdemo created
@@ -139,6 +139,7 @@ jason@DEV-52WP6M3:~/Documents/eso1$ kubectl get secretstore
 NAME       AGE   STATUS   READY
 blogdemo   25s   Valid    True
 ```
+apply [externalsecret.yaml](externalsecret.yaml)
 ```
 jason@DEV-52WP6M3:~/Documents/eso1$ kubectl apply -f externalsecret.yaml
 externalsecret.external-secrets.io/blogdemo created
@@ -155,13 +156,13 @@ Data
 admin-posgres-password:  5 bytes
 admin-posgres-username:  5 bytes
 ```
+apply [podexample.yaml](podexample.yaml)
 ```
+jason@DEV-52WP6M3:~/Documents/eso1$ kubectl apply -f podexample.yaml
 jason@DEV-52WP6M3:~/Documents/eso1$ kubectl get pods
 NAME      READY   STATUS    RESTARTS   AGE
 busybox   1/1     Running   0          66s
 jason@DEV-52WP6M3:~/Documents/eso1$ kubectl exec --stdin --tty busybox -- /bin/sh
-/ # echo #BLOG_SECRET_USERNAME
-
 / # echo $BLOG_SECRET_USERNAME
 admin
 / # echo $BLOG_SECRET_PASSWORD
