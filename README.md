@@ -1,7 +1,8 @@
 following this [eso](https://aws.amazon.com/blogs/containers/leverage-aws-secrets-stores-from-eks-fargate-with-external-secrets-operator/)  
 launch sandbox  
+`eksctl create cluster --name fargate-cluster --region us-east-1 --zones=us-east-1a,us-east-1b,us-east-1d --fargate`  
 
-create IAM policy to enable all EKS actions  
+create new IAM policy to enable all EKS actions  
 create new user and attach EKS profile to that user  
 get AWS Access Key ID
 Get secret  
@@ -9,7 +10,7 @@ Get secret
 `rm ~/.aws/config`  
 run aws configure  
 user new user created  
-`eksctl create cluster --name fargate-cluster --region us-east-1 --zones=us-east-1a,us-east-1b,us-east-1d --fargate`
+
 
 then run eksctl commands  
 ```
