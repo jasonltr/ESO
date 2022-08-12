@@ -9,6 +9,7 @@ Get secret
 `rm ~/.aws/config`  
 run aws configure  
 user new user created  
+`eksctl create cluster --name fargate-cluster --region us-east-1 --zones=us-east-1a,us-east-1b,us-east-1d --fargate`
 
 then run eksctl commands  
 ```
